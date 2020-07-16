@@ -10,15 +10,21 @@ body
    font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
     font-weight: 400;
     text-transform: none;
-    font-size: 17px;
+    font-size: 15px;
     line-height: 1.5;
     text-align: center;
-     align-content: center;
+    margin: 0 auto;
+}
+
+#botones
+{
+  background-color: rgb(99,66,00);
+  color: #FFFFFF
 }
 
 input[type=button], input[type=submit], input[type=reset] 
 {
-  background-color: rgb(81,60,35);
+  background-color: rgb(21,19,00);
   border: none;
   color: white;
   padding: 16px 32px;
@@ -76,6 +82,12 @@ input[type=button], input[type=submit], input[type=reset]
 	display: inline-block;
 	margin-right: none;
 }
+
+#letra
+{
+  background-color: rgb(220, 220, 220);
+}
+
 ul ol
 {
 	list-style: none;
@@ -171,7 +183,13 @@ aside, #investigación
 	display: inline-block;
 	vertical-align: top;
 	min-height: 200px;
+  color: #FFFFFF;
 	width: 40%;
+}
+
+#info
+{
+  background-color: rgb(36, 36, 36)
 }
 
 aside, #adicional
