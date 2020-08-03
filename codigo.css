@@ -3,22 +3,24 @@
 {
 	border:  none;
 	margin : 0;
+  box-sizing: border-box;
 }
 
-body 
+body
 {
-   font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-    font-weight: 400;
-    text-transform: none;
-    font-size: 15px;
-    line-height: 1.5;
-    text-align: center;
-    margin: 0 auto;
+  font-family: "Google Sans",Roboto,Arial,sans-serif;
+  font-size: 15px;
+  border-spacing: 0;
+  font-style: normal;
+  line-height: 24px;
+  text-align: center;
+  
 }
 
 #botones
 {
-  background-color: rgb(99,66,00);
+  background-color: #996600;
+  font-size: 10px;
   color: #FFFFFF
 }
 
@@ -64,7 +66,7 @@ input[type=button], input[type=submit], input[type=reset]
 {
 	position: absolute;
 	top: 10px;
-	right: 250px;
+	right: 30px;
 	font-family: "Google Sans Text Beta",Roboto,Arial,sans-serif;
 	font-size: 1em;
 }
@@ -86,6 +88,8 @@ input[type=button], input[type=submit], input[type=reset]
 #letra
 {
   background-color: rgb(220, 220, 220);
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 ul ol
@@ -161,8 +165,9 @@ article
 	display: inline-block;
 	min-height: 200px;
 	vertical-align: top;
+  font-size: 25px;
 	list-style: none;
-	width: 40%;
+	width: 30%;
 }
 
 .informacion
@@ -171,12 +176,20 @@ article
 	vertical-align: top;
 	min-height: 200px;
 	line-height: 20px;
-    padding: 0 20px;
-    column-count: 2;
+  padding: 10px 50px;
+  column-count: 1;
 	width: 40%;
 }
 
-aside { width: 35%; }
+.nota
+{
+  background-color: rgb(81,60,35);
+  margin: -5px;
+  column-count: 1;
+  width: 537PX;
+}
+
+aside { width: 34%; }
 
 aside, #investigación
 {
@@ -184,7 +197,122 @@ aside, #investigación
 	vertical-align: top;
 	min-height: 200px;
   color: #FFFFFF;
-	width: 40%;
+  width: 30%;
+}
+
+#banners125 
+{
+  margin: 9px 0;
+  width:100%;
+}
+
+#banners125 ul 
+{
+  padding:0;
+  margin: -10px;
+  list-style-type:none;
+}
+
+#banners125 ul li 
+{
+  float: left;
+  margin:10px 0 0 40px;
+  display: inline;
+}
+
+#banners125 img 
+{
+  display: block;
+  width: 210px;
+  height: 320px;
+}
+
+#banners250 
+{
+  margin: 10px 0;
+  width:100%;
+}
+
+#banners250 ul 
+{
+  padding:0;
+  margin:0;
+  list-style-type:none;
+}
+
+#banners250 ul li 
+{
+  float: left;
+  margin:343px 0 0 -210px;
+  display: inline;
+}
+
+#banners250 img 
+{
+  display: block;
+  width: 210px;
+  height: 230px;
+}
+
+#fotobanner
+{
+  background-color: rgb(36, 36, 36);
+  margin: 9px 0;
+  width:100%;
+}
+
+#fotobanner ul 
+{
+  padding:0;
+  margin:0;
+  list-style-type:none;
+}
+
+#fotobanner ul li 
+{
+  float: left;
+  margin:0 0 0 110px;
+  display: inline;
+}
+
+#fotobanner img 
+{
+  display: block;
+}
+
+#banners1 
+{
+  margin: 9px 0;
+  width:100%;
+}
+
+#banners1 ul 
+{
+  padding:0;
+  margin: -10px;
+  list-style-type:none;
+}
+
+#banners1 ul li 
+{
+  float: left;
+  margin:10px 0 0 40px;
+  display: inline;
+}
+
+#banners1 img 
+{
+  display: block;
+  width: 210px;
+  height: 320px;
+}
+
+#foto-articulo
+{
+  width: 400px;
+  height: 300px;
+  margin:10px auto;
+  display:block;
 }
 
 #info
@@ -197,16 +325,16 @@ aside, #adicional
 	display: inline-block;
 	vertical-align: top;
 	min-height: 200px;
-	width: 40%;
+	width: 37%;
 }
 
-aside { width: 35%; }
+aside { width: 32%; }
 
 .fila
 {
 	margin: .25em auto;
 	padding: .25em;
-	width: 80%; 
+	width: 78%; 
 }
 
 .titulo
@@ -215,224 +343,54 @@ aside { width: 35%; }
 	width: 90%;
 }
 
-.small 
+.container.gallery-container 
 {
-  font-size: 11px;
-  color: #999;
-  display: block;
-  margin-top: -10px
+    background-color: #fff;
+    color: #35373a;
+    min-height: 100vh;
+    border-radius: 20px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.06);
 }
 
-.cont 
+.tz-gallery 
 {
-  text-align: center;
+    padding: 40px;
 }
 
-.page-head 
+.tz-gallery .lightbox img 
 {
-  padding: 60px 0;
-  text-align: center;
+    width: 100%;
+    margin-bottom: 30px;
+    transition: 0.2s ease-in-out;
+    box-shadow: 0 2px 3px rgba(0,0,0,0.2);
 }
 
-.page-head .lead 
+
+.tz-gallery .lightbox img:hover 
 {
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 1.4;
-  margin-bottom: 50px;
-  margin-top: 0;
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.3);
 }
 
-.btn 
+.tz-gallery img 
 {
-  -moz-user-select: none;
-  background-image: none;
-  border: 1px solid transparent;
-  border-radius: 2px;
-  cursor: pointer;
-  display: inline-block;
-  font-size: 14px;
-  font-weight: normal;
-  line-height: 1.42857;
-  margin-bottom: 0;
-  padding: 6px 12px;
-  text-align: center;
-  vertical-align: middle;
-  white-space: nowrap;
-  text-decoration: none;
+    border-radius: 4px;
 }
 
-.btn-lg 
+.baguetteBox-button 
 {
-  border-radius: 2px;
-  font-size: 18px;
-  line-height: 1.33333;
-  padding: 10px 16px;
+    background-color: transparent !important;
 }
 
-.btn-primary:hover 
+@media(max-width: 768px) 
 {
-  background-color: #fff;
-  color: #152836;
-}
+    body 
+    {
+        padding: 0;
+    }
 
-.btn-primary 
-{
-  background-color: #152836;
-  border-color: #0e1a24;
-  color: #ffffff;
-}
-
-.btn-primary 
-{
-  border-color: #eeeeee;
-  color: #eeeeee;
-  transition: color 0.1s ease 0s, background-color 0.15s ease 0s;
-}
-
-.demo-gallery > ul 
-{
-  margin-bottom: 0;
-  padding-left: 15px;
-}
-
-.demo-gallery > ul > li 
-{
-  margin-bottom: 15px;
-  width: 180px;
-  display: inline-block;
-  margin-right: 15px;
-  list-style: outside none none;
-}
-
-.demo-gallery > ul > li a 
-{
-  border: 3px solid #FFF;
-  border-radius: 3px;
-  display: block;
-  overflow: hidden;
-  position: relative;
-  float: left;
-}
-
-.demo-gallery > ul > li a > img 
-{
-  -webkit-transition: -webkit-transform 0.15s ease 0s;
-  -moz-transition: -moz-transform 0.15s ease 0s;
-  -o-transition: -o-transform 0.15s ease 0s;
-  transition: transform 0.15s ease 0s;
-  -webkit-transform: scale3d(1, 1, 1);
-  transform: scale3d(1, 1, 1);
-  height: 100%;
-  width: 100%;
-}
-
-.demo-gallery > ul > li a:hover > img 
-{
-  -webkit-transform: scale3d(1.1, 1.1, 1.1);
-  transform: scale3d(1.1, 1.1, 1.1);
-}
-
-.demo-gallery > ul > li a:hover .demo-gallery-poster > img 
-{
-  opacity: 1;
-}
-
-.demo-gallery > ul > li a .demo-gallery-poster 
-{
-  background-color: rgba(0, 0, 0, 0.1);
-  bottom: 0;
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-  -webkit-transition: background-color 0.15s ease 0s;
-  -o-transition: background-color 0.15s ease 0s;
-  transition: background-color 0.15s ease 0s;
-}
-
-.demo-gallery > ul > li a .demo-gallery-poster > img 
-{
-  left: 50%;
-  margin-left: -10px;
-  margin-top: -10px;
-  opacity: 0;
-  position: absolute;
-  top: 50%;
-  -webkit-transition: opacity 0.3s ease 0s;
-  -o-transition: opacity 0.3s ease 0s;
-  transition: opacity 0.3s ease 0s;
-}
-
-.demo-gallery > ul > li a:hover .demo-gallery-poster 
-{
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
-.demo-gallery .justified-gallery > a > img 
-{
-  -webkit-transition: -webkit-transform 0.15s ease 0s;
-  -moz-transition: -moz-transform 0.15s ease 0s;
-  -o-transition: -o-transform 0.15s ease 0s;
-  transition: transform 0.15s ease 0s;
-  -webkit-transform: scale3d(1, 1, 1);
-  transform: scale3d(1, 1, 1);
-  height: 100%;
-  width: 100%;
-}
-
-.demo-gallery .justified-gallery > a:hover > img 
-{
-  -webkit-transform: scale3d(1.1, 1.1, 1.1);
-  transform: scale3d(1.1, 1.1, 1.1);
-}
-
-.demo-gallery .justified-gallery > a:hover .demo-gallery-poster > img 
-{
-  opacity: 1;
-}
-
-.demo-gallery .justified-gallery > a .demo-gallery-poster 
-{
-  background-color: rgba(0, 0, 0, 0.1);
-  bottom: 0;
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-  -webkit-transition: background-color 0.15s ease 0s;
-  -o-transition: background-color 0.15s ease 0s;
-  transition: background-color 0.15s ease 0s;
-}
-
-.demo-gallery .justified-gallery > a .demo-gallery-poster > img 
-{
-  left: 50%;
-  margin-left: -10px;
-  margin-top: -10px;
-  opacity: 0;
-  position: absolute;
-  top: 50%;
-  -webkit-transition: opacity 0.3s ease 0s;
-  -o-transition: opacity 0.3s ease 0s;
-  transition: opacity 0.3s ease 0s;
-}
-
-.demo-gallery .justified-gallery > a:hover .demo-gallery-poster 
-{
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
-.demo-gallery .video .demo-gallery-poster img 
-{
-  height: 48px;
-  margin-left: -24px;
-  margin-top: -24px;
-  opacity: 0.8;
-  width: 48px;
-}
-
-.demo-gallery.dark > ul > li a 
-{
-  border: 3px solid #04070a;
+    .container.gallery-container 
+    {
+        border-radius: 0;
+    }
 }
